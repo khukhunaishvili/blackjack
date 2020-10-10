@@ -1,0 +1,21 @@
+body {
+    margin-left: 30px;
+}
+div {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+footer {
+    position: absolute;
+    color: rgb(255, 38, 0);
+    bottom: 30px;
+    text-align: right
+}
+a img {
+    width:42px;
+    height:42px;
+}
+#continue-buttons, #play-buttons {
+    display: flex;
+    flex-direction: row;
+}

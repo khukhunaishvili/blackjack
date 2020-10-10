@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Blackjack by DrGogi</title>
+
+<body>
+    <h1>Blackjack</h1>
+    <div id="player-prof" class="profile">
+        <p id="money"></p>
+        <p id="bet"></p>
+    </div>
+    <div id="set-game" style="display: block;">
+        <div id="add-bet"></div>
+        <div>
+            <form id='set-money'>
+                <input type="number" placeholder="How much do you risk?" name="newMoney">
+                <button>Update money</button>
+            </form>
+        </div>
+    </div>
+    <div id="cards-on-table" style="display: none;">
+        <div id="player-cards-on-table">
+            <span id="player-cards"></span>
+            <span id="player-cards-sum"></span>
+        </div>
+        <div id="dealer-cards-on-table">
+            <span id="dealer-cards"></span>
+            <span id="dealer-cards-sum"></span>
+        </div>
+    </div>
+    <div id="play-buttons">
+        <input id="deal-button" type="button" onclick="deal()" value="Deal" style="display: none;">
+        <input id="hit-button" type="button" onclick="hit()" value="Hit" style="display: none;">
+        <input id="double-button" type="button" onclick="double()" value="Double" style="display: none;">
+        <input id="stand-button" type="button" onclick="stand()" value="Stand" style="display: none;">
+        <input id="surrender-button" type="button" onclick="surrender()" value="Surrender" style="display: none;">
+    </div>
+    <div id="message" style="display: none;"></div>
+    <div id="continue-buttons">
+        <input id="new-game-button" type="button" onclick="newGame()" value="New Game" style="display: none;">
+        <input id="rebeat-button" type="button" onclick="rebeat()" value="Rebeat" style="display: none;">
+        <input id="rebeat-and-deal-button" type="button" onclick="rebeatAndDeal()" value="Rebeat & Deal"
+            style="display: none;">
+    </div>
+    <footer>
+        <a href="https://github.com/khukhunaishvili/blackjack" target="_blank">
+            <img src="./assets/GitHub-Mark-120px-plus.png">
+        </a>
+    </footer>
+</body>
+<script src="core.js"></script>
+<script src="director.js"></script>
+
+</html>
